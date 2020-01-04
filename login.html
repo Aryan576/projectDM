@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<style>
+			#container{
+    height:100%;
+    width:100%;
+    position:relative;
+    filter:blur(4px);      
+}
+#loginForm{
+    background-image: linear-gradient(to right, cyan,blue); 
+    width:240px;
+    height:390px;
+    position:absolute;
+    left:340px;
+    top:120px;
+    padding-left:10px;    
+    border-radius:10px;
+}
+#loginButton{
+    width:180px;
+    background-color:white;
+    transition:0.9s;
+}
+#loginButton:hover{
+    background-color:rgb(3, 9, 27);
+    color:white;
+}
+input{
+    border-radius:8px;
+    height:40px;
+}
+#yes{
+    font-size:30px;
+    text-align:center;
+    font-weight:bold;
+}
+.text{
+    font-size: 20px;
+    color:white;
+}
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+
+		</style>
+	
+	</head>
+	<body>
+			<img src="Images\image.jpg" id="container">         
+			<div id="loginForm" class="blur">
+				   <p id="Yes">Yes Bank</p>
+								<p class="text">User Id</p>
+								<p><input type="text" placeholder="User ID"></p>
+								<p class="text"> Password</p>
+								<input type="password" placeholder="Password">
+								<p><input type="submit" value="Login" id="loginButton"></p>
+								Not already a member?<a href="">Sign Up</a>   
+				   
+			</div>
+	</body>
+</html>
